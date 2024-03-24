@@ -1,0 +1,75 @@
+
+
+<html>
+    <head>
+        <title>Demo of tables</title>
+        <script>
+            function verifyData()
+            {
+                var userName = frm.txtUsr.value;
+                var userPswd = frm.txtPwd.value;
+                
+
+
+                if (userName.length <= 0)                      // name length check start
+                {
+                    alert("Please Enter Name");
+                    return false;
+                }                                          // name length check ended
+
+                 if (userPswd.length <= 0)                      // password length check start
+                {
+                    alert("Please Enter Password");
+                    return false;
+                }                                          // password length check ended
+                                        
+            }
+
+        </script>
+    </head>
+    <body bgcolor="lightgrey">
+        
+        <form action="checkAdmin" name="frm">
+        <table border=0  width=50% align=center>
+            <tr bgcolor=grey>
+                <td colspan=2  align=center>
+                    <img src=healthCheckup.jpg height="200" width="650">
+                </td>
+
+            </tr>	
+
+            <tr>
+                <td bgcolor=grey width=20% height="300" align="center">
+
+                    <table border=0  bgcolor=lightgrey align=center > 
+                <caption><b>Admin Login</b></caption>
+
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name=txtUsr></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name=txtPwd></td>
+                </tr>
+
+
+                <tr>
+                    <td colspan=2 align=center> <input type="submit" value=Login onclick="return verifyData()"> </td>
+
+                </tr>
+
+            </table>
+
+                </td>
+
+            <tr bgcolor=lightgrey>
+                <td colspan=2 align=center><h3>*** Copyrights@2024 ***</h3><h4>***Health Check***</td>
+
+            </tr>	
+
+        </table>
+      </form>
+    </body>
+</html>
